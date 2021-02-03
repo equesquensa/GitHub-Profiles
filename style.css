@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #05080c;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+body::before{
+    content: '.\f09b';
+    font-family: 'FontAwesome';
+    left: 1%;
+    color: rgba(255, 255, 255, 0.027);
+    font-size: 300px;
+    position: absolute;
+    top: 1%;
+    z-index: -2;
+}
+
+.user-form{
+    width: 100%;
+    max-width: 700px;
+}
+
+.user-form input{
+    width: 100%;
+    display: block;
+    background-color: #070c11;
+    border-radius: 10px;
+    color: #6e6e6e;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 0.5px solid rgb(66, 66, 66);
+}
+
+.user-form input::placeholder{
+    color: #bbb;
+}
+
+
+.card {
+    max-width: 800px;
+    background-color: transparent;
+    border:0.5px solid rgb(66, 66, 66);
+    border-radius: 15px;
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar{
+    border-radius: 50%;
+    border: 2px solid rgb(66, 66, 66);
+    height: 150px;
+    width: 150px;
+}
+
+.user-info{
+    
+    margin-left: 2rem;
+}
+
+.user-info h2{
+    color: #fff;
+    margin-top: 0;
+}
+
+.user-info ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.user-info ul li strong{
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+    color: #5e5e5e;
+}
+
+.repo {
+    text-decoration: none;
+    color: rgb(86, 159, 253);
+    background-color:#5e5e5e17 ;
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+@media(max-width:500px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form{
+        max-width: 400px;
+        top: 400px;
+        margin-top: 40px;
+    }
+
+    .git{
+        position: relative;
+        top: 7%;
+        left: -4%;
+    }
+}
+
